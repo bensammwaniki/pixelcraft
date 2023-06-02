@@ -1,1 +1,74 @@
-/* You can add global styles to this file, and also import other style files */
+/* Start of global variables */
+@font-face {
+    font-family: "pixelR";
+    src: local("PixelCraft"), url(./assets/fonts/GraphikRegular.otf) format("opentype");
+}
+@font-face {
+    font-family: "pixelB";
+    src: local("PixelCraft"), url(./assets/fonts/GraphikBold.otf) format("opentype");
+}
+@font-face {
+    font-family: "pixelBl";
+    src: local("PixelCraft"), url(./assets/fonts/GraphikBlack.otf) format("opentype");
+}
+@font-face {
+    font-family: "pixelSb";
+    src: local("PixelCraft"), url(./assets/fonts/GraphikSemibold.otf) format("opentype");
+}
+// bootstrap componets
+$primary : #F4E2DE;
+$secondary : #025259;
+$fontColor : #111111;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/carousel";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/dropdown";
+
+body{
+    font-family: pixelR;
+}
+.btn-custom{
+    color: white;
+    background-color: #fcf5f37e;
+    border-radius: 105px;
+    height: 45px;
+    padding: 0px 30px 0px 30px;
+}
+
+.navbar{
+    width: 100vw;
+    height: 100px;
+    background-color: $primary;
+    .castomnav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .complogo{
+        height: fit-content;
+        img{
+            height: 88px;
+            width: 85px;
+            object-fit: contain;
+        }
+    }
+    .navcontent{
+        display: flex;
+        justify-content: space-between;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 13px;
+        .content{
+            display: flex;
+            margin-right: 550px !important;
+            li{
+                list-style: none;
+                margin: 10px;
+                padding: 5px;
+            }
+        }
+    }
+
+
+}
