@@ -99,3 +99,23 @@ body{
         font-size: 13px;
     }
 }
+
+.partners{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .row{
+        margin: auto;
+    }
+    h2{
+        font-size: 15px;
+        text-transform: uppercase;
+        padding: 5x;
+        margin: 5px;
+        text-align: center;
+    }
+    img{
+        margin: 10px;
+        height: 80px;
+        object-fit: contain;
+    }
+}
