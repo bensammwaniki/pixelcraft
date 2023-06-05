@@ -112,10 +112,81 @@ body{
         padding: 5x;
         margin: 5px;
         text-align: center;
+        font-family: pixelR;
     }
     img{
         margin: 10px;
         height: 80px;
         object-fit: contain;
+    }
+}
+
+.desc{
+    background-image: url(../src/assets/images/descbg.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    .info{
+        text-align: center;
+        align-items: center;
+        padding: 0px 250px 0px 250px;
+        h2{
+            font-family: pixelR;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+        h3{
+            font-size: 38px;
+            letter-spacing: 1px;
+        }
+        span{
+            color: #025259;
+        }
+        button{
+            margin-top: 15px;
+            color: $primary;
+            background-color: $secondary;
+            font-size: 13px;
+        }
+    }
+    img{
+
+        width: 100%;
+        padding: 0px 250px 0px 250px;
+        object-fit: cover;
+    }
+}
+
+.desc-2{
+    height: 950px;
+    padding-top: 350px;
+    transform: translatey(-330px);
+    position: relative;
+    z-index: -1;
+    background: linear-gradient(180deg, #F4F6F9 58.06%, #F4E2DE 102.13%);
+    .container{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .col{
+        padding: 30px;
+    }
+    img{
+        width: 100%;
+        object-fit: contain;
+    }
+    .col-castom{
+        padding-left: 150px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        h3{
+            font-size: 38px;
+            margin-bottom: 20px;
+        }
+        span{
+            color: #025259;
+        }
     }
 }
