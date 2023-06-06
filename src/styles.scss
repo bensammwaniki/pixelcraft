@@ -190,3 +190,37 @@ body{
         }
     }
 }
+
+.about{
+    transform: translatey(-330px);
+    position: relative;
+    .container{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .col{
+        padding: 30px;
+    }
+    img{
+        width: 75%;
+        object-fit: contain;
+    }
+    .col-castom{
+        padding-left: 100px;
+        padding-right: 100px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        h2{
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        h3{
+            font-size: 38px;
+            margin-bottom: 20px;
+        }
+        span{
+            color: #025259;
+        }
+    }
+}
