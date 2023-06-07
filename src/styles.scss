@@ -289,3 +289,37 @@ body{
         transform: translateX(80px);
     }
 }
+
+.service{
+    .col-12{
+        text-align: center;
+        padding: 0px 350px 0px 350px;
+        color: #025259;
+        h2{
+            margin-bottom: 20px;
+            font-size: 38px;
+        }
+    }
+    .card{
+        width: 268px;
+        padding:0px 15px;
+        .img{
+            transform: translateY(-50px);
+        img{
+            width: 70px;
+            object-fit: cover;
+        }
+        }
+        
+        h3{
+            font-size: 15px;
+            padding-top: -20px;
+            font-family: pixelB;
+            text-transform: uppercase;
+        }
+        p{
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+    }
+}
