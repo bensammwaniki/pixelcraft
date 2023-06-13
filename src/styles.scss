@@ -379,3 +379,18 @@ body{
         }
     }
 }
+
+
+.footer{
+    .copyright{
+        img{
+            width: 120px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        p{
+            font-family: pixell;
+            font-size: 10px;
+        }
+    }
+}
