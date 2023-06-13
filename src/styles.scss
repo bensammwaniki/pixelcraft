@@ -4,6 +4,10 @@
     src: local("PixelCraft"), url(./assets/fonts/GraphikRegular.otf) format("opentype");
 }
 @font-face {
+    font-family: "pixell";
+    src: local("PixelCraft"), url(./assets/fonts/GraphikLight.otf) format("opentype");
+}
+@font-face {
     font-family: "pixelB";
     src: local("PixelCraft"), url(./assets/fonts/GraphikBold.otf) format("opentype");
 }
@@ -340,5 +344,38 @@ body{
             border: solid 1px #D94F04;
         }
         
+    }
+}
+
+.info{
+    margin: 50px 0px 50px 0px;
+    .container{
+        height: 232px;
+        background: linear-gradient(95.31deg, #025259 -28.73%, #007172 23.23%, #D94F04 62.74%, #F4E2DE 111.77%);
+        border-radius: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            p{
+                font-family: pixell;
+                font-size: 27px;
+                text-align: center;
+                color: #FFFFFF;
+            }        
+            button{
+                color: $secondary;
+                background-color: #fff3f0;
+                border-radius: 105px;
+                height: 45px;
+                padding: 0px 20px 0px 20px;
+                border: solid 1px #D94F04;
+            }
+        }
     }
 }
