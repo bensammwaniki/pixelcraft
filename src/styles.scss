@@ -232,6 +232,7 @@ body{
 .why{
     overflow-x: clip;
     transform: translatey(-230px);
+    background-image: url("../src/assets/svgs/Vector1.svg");
     .container{
         padding-left: 50px;
         padding-right: 50px;
@@ -319,7 +320,7 @@ body{
             display: flex;
             justify-content: center;
         img{
-            width: 90px;
+            width: 70px;
             object-fit: cover;
             transform: translateY(-70px);
         }
@@ -382,6 +383,8 @@ body{
 
 
 .footer{
+    margin: 200px 0px 0px 0px;
+    padding: 20px 0px 10px 0px;
     .copyright{
         img{
             width: 120px;
@@ -391,6 +394,64 @@ body{
         p{
             font-family: pixell;
             font-size: 12px;
+        }
+    }
+    .ft{
+        display: flex;
+        flex-direction: column;
+        h3{
+            font-size: 17px;
+            text-transform: uppercase;
+        }
+        a,p{
+            text-decoration: none;
+            color: #242424;
+            margin: 5px;
+            padding: 3px;
+            font-size: 14px;
+        }
+        a:hover{
+            color: #025259;
+            transition: all 30ms;
+        }
+        .input-group{
+            margin: 5px;
+            padding-top: 3px;
+            padding: 3px;
+            width: 90%;
+            ::placeholder{
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+            button{
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+        }
+        .social{
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            img{
+                width: 25px;
+                object-fit: cover;
+                align-content: baseline;
+            }
+            img:hover{
+                scale: 1.02;
+                transition: all 30ms;
+            }
+        }
+        .rights{
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            transform: translateY(28px);
+            p{
+                margin-right: 15px;
+                font-size: 10px;
+                color: #595959;
+            }
         }
     }
 }
