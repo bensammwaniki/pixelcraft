@@ -39,6 +39,7 @@ body{
     border-radius: 105px;
     height: 45px;
     padding: 0px 30px 0px 30px;
+    transform: translateX(50px);
 }
 .btn-custom:hover{
     color: $secondary;
@@ -51,12 +52,15 @@ body{
     height: 100px;
     background-color: #ffd3c9;
     z-index: 10;
+    justify-content: center;
     .castomnav{
         display: flex;
         justify-content: space-between;
+        width: 100%;
     }
     .complogo{
         height: fit-content;
+        transform: translateX(-20px);
         img{
             height: 88px;
             width: 85px;
@@ -71,7 +75,7 @@ body{
         font-size: 13px;
         .content{
             display: flex;
-            margin-right: 550px !important;
+            justify-content: center;
             li{
                 list-style: none;
                 margin: 10px;
@@ -79,8 +83,9 @@ body{
             }
         }
     }
-
-
+    .menu{
+        display: none;
+    }
 }
 .home-info{
     left: 100px;
@@ -453,12 +458,12 @@ body{
 }
 //====tablet styling=========//
 
-@media only screen and (min-width: 767px) {
+@media (max-width: 1200px) {
     .navbar{
         .complogo{
             height: fit-content;
-            position: relative;
-            top: -110px;
+            position: absolute;
+            top: 0px;
             img{
                 height: 88px;
                 width: 85px;
@@ -468,13 +473,30 @@ body{
         .navcontent{
             display: flex;
             flex-direction: column;
-            justify-content: start;
+            justify-content: flex-start;
             background-color: #F4E2DE;
+            width: 0%;
+            height: 50vh;
+            padding: 0px;
+            position: absolute;
+            right: 0px;
+            top: 10px;
+            transition: width ease-in-out 30ms;
             .content{
                 display: flex;
                 flex-direction: column;
-                margin-right: 0px !important;
             }
+            .btn-custom{
+                margin:0px 2rem;
+                margin-bottom: 20px;
+                transform: translateX(0px);
+            }
+        }
+        .menu{
+            display: block;
+            z-index: -1;
+            position: absolute;
+            right: 40px;
         }
     }
     .carousel-item{

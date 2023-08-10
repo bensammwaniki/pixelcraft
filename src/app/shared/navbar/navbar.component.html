@@ -1,10 +1,10 @@
 <div class="navbar position-fixed">
-    <div class="container castomnav">
-        <div class="complogo">
+    <div class="container castomnav row">
+        <div class="complogo col-4">
             <img src="../../../assets/images/BW logo.png" alt="pixel craft logo">
         </div>
-        <nav class="navcontent">
-            <ul class="m-auto mb-lg-0 content">
+        <nav class="navcontent col-8" id="navcontent">
+            <ul class=" content">
                 <li class="nav-item">
                     <a class="nav-link" >Home</a>
                 </li>
@@ -23,5 +23,8 @@
             </ul>
             <button type="button" class="btn btn-custom">Contact us</button>
         </nav>
+    </div>
+    <div class="menu" (click)="openNav()">
+        <i class="bi bi-menu-button-wide" style="font-size:3rem; color:#025259;"></i>
     </div>
 </div>
