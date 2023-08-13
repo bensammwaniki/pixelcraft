@@ -20,28 +20,32 @@
 </section>
 
 <section class="partners">
+
     <div class="container">
         <h2>Trusted By:</h2>
-        <div class="row row-cols-sm-3 row-cols-md-6 row-cols-lg-6">
-            <div class="col">
-                <img src="../../../assets/images/logos.png" alt="Kandara marathon">
-            </div>
-            <div class="col">
-                <img src="../../../assets/images/logo(2).png" alt="Kandara marathon">
-            </div>
-            <div class="col">
-                <img src="../../../assets/images/logos.png" alt="Kandara marathon">
-            </div>
-            <div class="col">
-                <img src="../../../assets/images/logo(4).png" alt="Kandara marathon">
-            </div>
-            <div class="col">
-                <img src="../../../assets/images/logos.png" alt="Kandara marathon">
-            </div>
-            <div class="col">
-                <img src="../../../assets/images/logo(3).png" alt="Kandara marathon">
-            </div>
-        </div>
+            <ngx-slick-carousel class="row partners"
+                     #sliderElement="slick-carousel" 
+                             [config]="slideConfig">
+                             
+                <div ngxSlickItem class="col slide">
+                    <img src="../../../assets/images/logos.png" alt="Kandara marathon">
+                </div>
+                <div ngxSlickItem class="col slide">
+                    <img src="../../../assets/images/logo(2).png" alt="Kandara marathon">
+                </div>
+                <div ngxSlickItem class="col slide">
+                    <img src="../../../assets/images/logos.png" alt="Kandara marathon">
+                </div>
+                <div ngxSlickItem class="col slide">
+                    <img src="../../../assets/images/logo(4).png" alt="Kandara marathon">
+                </div>
+                <div ngxSlickItem class="col slide">
+                    <img src="../../../assets/images/logos.png" alt="Kandara marathon">
+                </div>
+                <div ngxSlickItem class="col slide">
+                    <img src="../../../assets/images/logo(3).png" alt="Kandara marathon">
+                </div>
+            </ngx-slick-carousel>
     </div>
 </section>
 

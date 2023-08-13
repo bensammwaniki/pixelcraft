@@ -86,6 +86,10 @@ body{
     .menu{
         display: none;
     }
+    .menu-close{
+        display: none;
+    }
+
 }
 .home-info{
     left: 100px;
@@ -481,10 +485,11 @@ body{
             position: absolute;
             right: 0px;
             top: 10px;
-            transition: width ease-in-out 30ms;
+            transition: ease-in-out 1s;
             .content{
                 display: flex;
                 flex-direction: column;
+                margin-top: 30px;
             }
             .btn-custom{
                 margin:0px 2rem;
@@ -497,6 +502,15 @@ body{
             z-index: -1;
             position: absolute;
             right: 40px;
+        }
+        .menu-close{
+            display: block;
+            position: absolute;
+            right: 30px;
+            top: 0px;
+        }
+        .close-btn{
+            display: none;
         }
     }
     .carousel-item{
@@ -635,6 +649,7 @@ body{
             }
             .input-group{
                 width: 100%;
+                padding: 0px;
                 ::placeholder{
                     font-size: 7px;
                 }
@@ -664,10 +679,51 @@ body{
 
 @media only screen 
   and (min-device-width: 320px) 
-  and (max-device-width: 640px){
-
-
-
-
+  and (max-device-width: 740px){
+    .navbar{
+            height: 57px;
+        .complogo{
+            top: 3px;
+            img{
+                height: 50px;
+                object-fit: contain;
+            }
+        }
+        .menu{
+            right: 20px;
+            i{
+                font-size: 1.2rem !important;
+            }
+        }
+        .menu-close{
+            right: 10px;
+            i{
+                font-size: 1rem !important;
+            }
+        }
+        .close-btn{
+            display: none;
+        }
+    }
+    .carousel-item{
+        img{
+            height: 380px;
+            object-position: 40%;
+            object-fit: cover;
+        }
+    }
+    .home-info{
+        left: 0px;
+        top: 95px;
+        width: 100%;
+        margin: 0px;
+        padding: 10px;
+        h1{
+            font-size: 100%;
+        }
+        p{
+            font-size: 100%;
+        }
+    }
 
 }

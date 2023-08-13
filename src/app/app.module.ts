@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +24,7 @@ import { ContactComponent } from './home/contact/contact.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    SlickCarouselModule,
     RouterModule.forRoot([
       { path: '', 
         redirectTo: 'home', 

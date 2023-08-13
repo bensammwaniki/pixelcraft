@@ -1,0 +1,16 @@
+
+.partners {
+	display: flex;
+	justify-content: center;
+	.slide {
+		height: 90px;
+		margin: 10px;
+		position: relative;
+		img{
+			height: 80px;
+			width: 30vw;
+			filter: grayscale(3);
+			object-fit: contain;			
+		}
+	}
+}

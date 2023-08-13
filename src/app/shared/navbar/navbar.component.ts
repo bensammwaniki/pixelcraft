@@ -18,13 +18,17 @@ export class NavbarComponent {
   }
   openNav(): void{
     const mySidenav = document.getElementById("navcontent");
+    const close = document.getElementById("close");
     this.renderer.setStyle(mySidenav, 'width', '40%');
+    this.renderer.removeClass(close, 'close-btn');
   }
   closeNav(): void{
     const sidenav = document.getElementById("navcontent");
+    const close = document.getElementById("close");
     if (sidenav) {
       sidenav.style.width = "0%";
     }
+    this.renderer.addClass(close, 'close-btn');
   }
 
 }
