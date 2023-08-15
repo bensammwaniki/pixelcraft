@@ -24,7 +24,7 @@ export class HomeComponent {
         }
       },
       {
-        breakpoint: 420,
+        breakpoint: 320,
         settings: {
           centerPadding: '10px',
           slidesToShow: 3

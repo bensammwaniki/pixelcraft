@@ -19,7 +19,7 @@ export class NavbarComponent {
   openNav(): void{
     const mySidenav = document.getElementById("navcontent");
     const close = document.getElementById("close");
-    this.renderer.setStyle(mySidenav, 'width', '40%');
+    this.renderer.setStyle(mySidenav, 'width', '60%');
     this.renderer.removeClass(close, 'close-btn');
   }
   closeNav(): void{
