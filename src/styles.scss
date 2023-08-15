@@ -318,7 +318,6 @@ body{
     }
     .col-12{
         text-align: center;
-        // padding: 0px 350px 0px 350px;
         color: #025259;
         h2{
             margin-bottom: 20px;
@@ -690,7 +689,7 @@ body{
 //====mobile phone styling===//
 
 @media only screen 
-  and (min-device-width: 320px) 
+  and (min-device-width: 270px) 
   and (max-device-width: 740px){
     .navbar{
             height: 57px;
