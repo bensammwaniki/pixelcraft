@@ -34,6 +34,10 @@ import { ContactComponent } from './home/contact/contact.component';
         path:'home',
         component: HomeComponent
       },
+      {
+        path:'contact',
+        component: ContactComponent
+      },
     ]),
   ],
   providers: [],

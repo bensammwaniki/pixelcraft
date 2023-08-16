@@ -1,1 +1,62 @@
-<p>contact works!</p>
+<section class="contact">
+    <div class="container">
+        <h1 class="section-header">Contact us</h1>
+        <div class="row row-cols-1 row-cols-lg-3 row-cols-md-1">
+            <div class="col">
+                <img src="../../../assets/images/contact.jpg" class="cont-img" alt="">
+            </div>
+            <div class="col">
+                <form id="contact-form" class="form-horizontal" role="form">
+                    <div class="form-group">
+                      <div class="col-sm-12">
+                        <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-sm-12">
+                        <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+                      </div>
+                    </div>
+                    <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+                    
+                    <button class="btn btn-secondary send-button" id="submit" type="submit" value="SEND">
+                      <div class="alt-send-button">
+                        <i class="bi bi-send"></i><span class="send-text">SEND</span>
+                      </div>
+                    
+                    </button>
+                    
+                  </form>
+                  
+            </div>
+            <div class="col">
+                    <ul class="contact-list">
+                      <li class="list-item"><i class="bi bi-geo-alt-fill"><span class="contact-text place">City, State</span></i></li>
+                      
+                      <li class="list-item"><i class="bi bi-telephone-fill"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
+                      
+                      <li class="list-item"><i class="bi bi-envelope-fill"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">hitmeup@gmail.com</a></span></i></li>
+                      
+                    </ul>
+                    <hr>
+                    <div>
+                        <ul class="social-media-list">
+                            <li><a href="#" target="_blank" class="contact-icon">
+                              <i class="bi bi-github" aria-hidden="true"></i></a>
+                            </li>
+                            <li><a href="#" target="_blank" class="contact-icon">
+                              <i class="bi bi-linkedin" aria-hidden="true"></i></a>
+                            </li>
+                            <li><a href="#" target="_blank" class="contact-icon">
+                              <i class="bi bi-twitter" aria-hidden="true"></i></a>
+                            </li>
+                            <li><a href="#" target="_blank" class="contact-icon">
+                              <i class="bi bi-instagram" aria-hidden="true"></i></a>
+                            </li>       
+                          </ul>
+                    </div>
+                    <hr>
+            </div>
+        </div>
+    </div> 
+</section>
