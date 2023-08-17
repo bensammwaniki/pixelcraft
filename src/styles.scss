@@ -958,8 +958,10 @@ body{
             }
         }
     }
-    .ft{
-        justify-content: flex-end;
+    .footer{
+        .ft{
+            justify-content: flex-end;
+        }
     }
     .footer .copyright p {
         font-size: 10px;
