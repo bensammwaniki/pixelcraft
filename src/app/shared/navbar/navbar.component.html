@@ -5,11 +5,11 @@
         </div>
         <nav class="navcontent col-8" id="navcontent">
             <div class="menu-close close-btn" id="close" (click)="closeNav()">
-                <i class="bi bi-x-square" style="font-size:2rem; color:#025259;"></i>
+                <i class="bi bi-x-square" style="font-size:2.5rem; color:#025259;"></i>
             </div>
             <ul class=" content">
                 <li class="nav-item">
-                    <a class="nav-link" >Home</a>
+                    <a class="nav-link" routerLink="/home" routerLinkActive="active-link"  [routerLinkActiveOptions]="{exact:true}">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" >services</a>
@@ -24,7 +24,7 @@
                     <a class="nav-link" >blog</a>
                 </li>
             </ul>
-            <button type="button" class="btn btn-custom">Contact us</button>
+            <a class="btn btn-custom" routerLink="/contact" routerLinkActive="active-link"  [routerLinkActiveOptions]="{exact:true}">Contact us</a>
         </nav>
     </div>
     <div class="menu" (click)="openNav()">

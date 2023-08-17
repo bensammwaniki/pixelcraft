@@ -34,13 +34,19 @@ body{
     font-family: pixelR;
 }
 .btn-custom{
+    display: flex;
+    font-size: 1rem;
     color: #D94F04;
-    background-color: #fcf5f37e;
+    background-color: $primary;
     border-radius: 105px;
     height: 45px;
     padding: 0px 30px 0px 30px;
     transform: translateX(50px);
+    min-width: -moz-fit-content;
+    max-width: fit-content;
     min-width: fit-content;
+    align-items: center;
+    white-space: nowrap;
 }
 .btn-custom:hover{
     color: $secondary;
@@ -51,7 +57,7 @@ body{
 .navbar{
     width: 100vw;
     height: 100px;
-    background-color: #ffd3c9;
+    background-color: #fdc2b5;
     z-index: 10;
     justify-content: center;
     .castomnav{
@@ -77,6 +83,7 @@ body{
         .content{
             display: flex;
             justify-content: center;
+            transform: translateX(-60%);
             li{
                 list-style: none;
                 margin: 10px;
@@ -102,9 +109,12 @@ body{
     h1{
         text-transform: uppercase;
         font-family: pixelBl;
+        text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6509803921568628);
     }
     p{
         margin-top: 15px;
+        text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6509803921568628);
+
     }
     button{
         margin-top: 15px;
@@ -132,7 +142,6 @@ body{
         display: flex;
         justify-content: center;
         .slide {
-            height: 90px;
             margin: 10px;
             position: relative;
             img{
@@ -153,6 +162,8 @@ body{
         text-align: center;
         align-items: center;
         padding: 0px 250px 0px 250px;
+        display: flex;
+        flex-direction: column;
         h2{
             font-family: pixelR;
             font-size: 16px;
@@ -629,22 +640,24 @@ body{
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            background-color: #F4E2DE;
+            background-color: #fdc2b5cb;
             width: 0%;
             height: 70vh;
             padding: 0px;
             position: absolute;
+            backdrop-filter: blur(3px);
             right: 0px;
             top: 10px;
             transition: ease-in-out 1s;
             .content{
                 display: flex;
                 flex-direction: column;
+                transform: translateX(0%);
                 margin-top: 30px;
             }
             .btn-custom{
-                margin:0px 2rem;
-                margin-bottom: 20px;
+                margin:0px 1rem;
+                margin-bottom: 0px;
                 transform: translateX(0px);
             }
         }
@@ -695,6 +708,9 @@ body{
     .desc{
         .info{
             padding: 0px 50px 0px 50px;
+            p{
+                text-align: start;
+            }
         }
         img{
             padding: 0px 100px 0px 100px;
@@ -719,7 +735,7 @@ body{
             }
         }
         .col-castom{
-            padding-left: 50px;
+            padding-left: 35px;
             p{
                 padding: 0px 50px 0px 50px;
                 text-align: center;
@@ -894,9 +910,8 @@ body{
             padding: 0px;
         }
         .col-castom{
-            padding-left: 50px;
             p{
-                padding: 10px;
+                padding: 0px;
                 text-align: left;
             }
         }
