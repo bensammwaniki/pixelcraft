@@ -805,15 +805,18 @@ body{
         .copyright{
             img{
                 width: 90px;
+                margin-bottom: 10px;
             }
             p{
                 font-size: 10px;
+                padding-bottom: 20px;
             }
         }
         .ft{
             justify-content: flex-end;
             h3{
                 font-size: 10px;
+                font-weight: bolder;
             }
             a,p{
                 font-size: 10px;
