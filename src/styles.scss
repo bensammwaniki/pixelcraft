@@ -35,7 +35,7 @@ body{
 }
 .btn-custom{
     display: flex;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #D94F04;
     background-color: $primary;
     border-radius: 105px;
@@ -181,6 +181,7 @@ body{
             color: $primary;
             background-color: $secondary;
             font-size: 13px;
+            transform: translateX(0px);
         }
     }
     img{
@@ -561,11 +562,15 @@ body{
         p{
             font-family: pixell;
             font-size: 12px;
+            // margin-bottom: 0px !important;
+            margin: 5px;
+            padding: 3px;
         }
     }
     .ft{
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
         h3{
             font-size: 17px;
             text-transform: uppercase;
@@ -613,7 +618,6 @@ body{
             width: 70%;
             display: flex;
             flex-wrap: wrap;
-            transform: translateY(28px);
             p{
                 margin-right: 15px;
                 font-size: 10px;
