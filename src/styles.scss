@@ -809,7 +809,6 @@ body{
             }
             p{
                 font-size: 10px;
-                padding-bottom: 20px;
             }
         }
         .ft{
@@ -961,5 +960,9 @@ body{
     }
     .ft{
         justify-content: flex-end;
+    }
+    .footer .copyright p {
+        font-size: 10px;
+        padding-bottom: 20px;
     }
 }
