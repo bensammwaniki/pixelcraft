@@ -99,12 +99,12 @@ body{
                 bottom: 0;
                 left: -10%;
                 width: 0;
-                height: 3px; 
+                height: 2px; 
                 background-color: $secondary;
                 transition: width 0.3s ease; 
               }
               a:hover::before {
-                width: 120%; /* Change bottom border color on hover */
+                width: 120%; 
               }
         }
     }
