@@ -83,12 +83,29 @@ body{
         .content{
             display: flex;
             justify-content: center;
+            margin-bottom: 0px !important;
             transform: translateX(-60%);
             li{
                 list-style: none;
                 margin: 10px;
                 padding: 5px;
             }
+            a {
+                position: relative;
+              }
+            a::before{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: -10%;
+                width: 0;
+                height: 3px; 
+                background-color: $secondary;
+                transition: width 0.3s ease; 
+              }
+              a:hover::before {
+                width: 120%; /* Change bottom border color on hover */
+              }
         }
     }
     .menu{
