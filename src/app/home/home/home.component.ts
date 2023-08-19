@@ -8,11 +8,10 @@ import { Component } from '@angular/core';
 export class HomeComponent {
 
   slideConfig = {
-    infinite: true,
     slidesToShow: 6,
     slidesToScroll: 3,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 4000,
     arrows:false,
     centerMode: true,
     responsive: [
