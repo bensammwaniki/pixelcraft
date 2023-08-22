@@ -40,6 +40,10 @@ import { ServiceComponent } from './flair/service/service.component';
         path:'contact',
         component: ContactComponent
       },
+      {
+        path:'service',
+        component: ServiceComponent
+      },
     ]),
   ],
   providers: [],
