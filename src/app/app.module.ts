@@ -11,6 +11,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './home/home/home.component';
 import { BlogsComponent } from './blog/blogs/blogs.component';
 import { ContactComponent } from './home/contact/contact.component';
+import { ServiceComponent } from './flair/service/service.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ContactComponent } from './home/contact/contact.component';
     FooterComponent,
     HomeComponent,
     BlogsComponent,
-    ContactComponent
+    ContactComponent,
+    ServiceComponent
   ],
   imports: [
     BrowserModule,

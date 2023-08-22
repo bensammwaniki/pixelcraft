@@ -436,20 +436,11 @@ body{
         text-transform: uppercase;
         letter-spacing: 2px;
       }
-
-    .cont-img{
-        width: 100%;
-        height: 407px;
-        object-fit: cover;
-        // border-bottom-left-radius: 40%;
-        // border-top-right-radius: 40%;
-      }
     .form-control,textarea {
         letter-spacing: 1px;
         margin-top: 10px;
     }
     
-      
     .send-button {
         margin-top: 15px;
         height: 34px;
@@ -475,17 +466,14 @@ body{
         list-style-type: none;
         margin-left: 40px;
         padding-right: 20px;
-        .place {
-            margin-left: 62px;
-          }
-          .phone {
-            margin-left: 56px;
-          }
-          .gmail {
-            margin-left: 53px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        .ico {
+            margin-left: 50px;
           }
           i{
-            font-size: 2rem;
+            font-size: 1.5rem;
           }
         .list-item {
             line-height: 2;
@@ -493,9 +481,11 @@ body{
         }
       
         .contact-text {
-          font: 300 18px 'Lato', sans-serif;
-          letter-spacing: 1.9px;
-          color: $secondary;
+            font-family: pixelR;
+            font-style: normal;
+            letter-spacing: 1px;
+            font-size: 1.2rem;
+            color: $secondary;
       
           a {
             color: $secondary;
@@ -510,57 +500,6 @@ body{
         }
       }
       
-    .social-media-list {
-        position: relative;
-        font-size: 20px;
-        text-align: center;
-        width: 100%;
-        margin: 0 auto;
-        padding: 0;
-      
-        li {
-          position: relative;
-          display: inline-block;
-          height: 50px;
-          width: 50px;
-          margin: 10px 3px;
-          line-height: 50px;
-          border-radius: 50%;
-          color: #fff;
-          background-color: $secondary;
-          cursor: pointer;
-          transition: all 0.2s ease-in-out;
-      
-          &:after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 50px;
-            height: 50px;
-            line-height: 50px;
-            border-radius: 50%;
-            opacity: 0;
-            box-shadow: 0 0 0 1px #fff;
-            transition: all 0.2s ease-in-out;
-          }
-          &:hover {
-            background-color: #fff;
-            &:after {
-              opacity: 1;
-              transform: scale(1.12);
-              transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
-            }
-            a {
-              color: #000;
-            }
-          }
-      
-          a {
-            color: #fff;
-          }
-        }
-      }
       hr {
         border-color: rgba(255,255,255,.6);
       }
