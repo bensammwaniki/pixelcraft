@@ -16,7 +16,7 @@ export class HomeComponent {
     centerMode: true,
     responsive: [
       {
-        breakpoint: 740,
+        breakpoint: 770,
         settings: {
           centerPadding: '10px',
           slidesToShow: 4
