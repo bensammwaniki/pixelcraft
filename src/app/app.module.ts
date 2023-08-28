@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home/home.component';
 import { BlogsComponent } from './blog/blogs/blogs.component';
 import { ContactComponent } from './home/contact/contact.component';
 import { ServiceComponent } from './flair/service/service.component';
+import { AboutUsComponent } from './about/about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ServiceComponent } from './flair/service/service.component';
     HomeComponent,
     BlogsComponent,
     ContactComponent,
-    ServiceComponent
+    ServiceComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
@@ -43,6 +45,10 @@ import { ServiceComponent } from './flair/service/service.component';
       {
         path:'service',
         component: ServiceComponent
+      },
+      {
+        path:'about',
+        component: AboutUsComponent
       },
     ]),
   ],
