@@ -641,6 +641,8 @@ body{
 .meet{
     padding-top: 100px;
     .container{
+        position: relative;
+        height: fit-content;
         .hide{
             height: 39px;
             width: 50%;
@@ -964,14 +966,15 @@ body{
         padding-top: 100px;
         .container{
             .hide{
-                width: 80%;
-                bottom: 443px;
-                left: 10%;
+                height: 16vh;
+                width: 100%;
+                bottom: 0px;
+                left: 0%;
             }
         }
         }
     .footer{
-        margin: 100px 0px 0px 0px;
+        margin: 20px 0px 0px 0px;
         padding: 20px 0px 10px 0px;
         .copyright{
             img{
@@ -1219,8 +1222,9 @@ body{
         padding-top: 50px;
         .container{
             .hide{
-                width: 90%;
-                bottom: 32px;
+                width: 100%;
+                height: 218px;
+                bottom: 0;
                 left: 0%;
             }
         }
