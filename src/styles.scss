@@ -639,7 +639,18 @@ body{
     }
 }
 .meet{
-padding-top: 100px;
+    padding-top: 100px;
+    .container{
+        .hide{
+            height: 39px;
+            width: 50%;
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            display: flex;
+            bottom: -62px;
+            left: 25%;
+        }
+    }
 }
 .footer{
     margin: 20px 0px 0px 0px;
@@ -949,6 +960,16 @@ padding-top: 100px;
             }
         }
     }
+    .meet{
+        padding-top: 100px;
+        .container{
+            .hide{
+                width: 80%;
+                bottom: 443px;
+                left: 10%;
+            }
+        }
+        }
     .footer{
         margin: 100px 0px 0px 0px;
         padding: 20px 0px 10px 0px;
@@ -1196,6 +1217,13 @@ padding-top: 100px;
     }
     .meet{
         padding-top: 50px;
+        .container{
+            .hide{
+                width: 90%;
+                bottom: 32px;
+                left: 0%;
+            }
+        }
         }
     .footer{
         margin-top: 50px;
