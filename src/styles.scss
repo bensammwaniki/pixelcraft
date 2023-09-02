@@ -197,6 +197,9 @@ body{
         span{
             color: #025259;
         }
+        a{
+            text-decoration: none;
+        }
         button{
             margin-top: 15px;
             color: $primary;
@@ -214,8 +217,8 @@ body{
 }
 
 .desc-2{
-    height: 950px;
-    padding-top: 350px;
+    height: 850px;
+    padding-top: 270px;
     transform: translatey(-330px);
     position: relative;
     z-index: -1;
