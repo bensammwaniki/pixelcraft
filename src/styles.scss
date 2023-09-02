@@ -134,6 +134,9 @@ body{
         text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6509803921568628);
 
     }
+    a{
+        text-decoration: none;
+    }
     button{
         margin-top: 15px;
         color: $primary;
@@ -1136,6 +1139,30 @@ body{
                     font-size: 18px;
                     text-align: left;
                 }        
+            }
+        }
+    }
+    .about-us-comp{
+        padding-top: 50px;
+        .head{
+            margin-top: 20px;
+            .col-a{
+                padding-left: 10px;
+            }
+            .col-b{
+                .img{
+                    width: 100%;
+                    object-fit: contain;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .info{
+            .col{
+                padding-left: 10px;
+                p{
+                    padding-left: 20px;
+                }
             }
         }
     }
