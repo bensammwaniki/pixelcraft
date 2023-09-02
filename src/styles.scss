@@ -644,13 +644,13 @@ body{
         position: relative;
         height: fit-content;
         .hide{
-            height: 39px;
-            width: 50%;
-            background-color: rgb(255, 255, 255);
+            height: 130px;
+            width: 100%;
+            background-color: #fff;
             position: absolute;
             display: flex;
-            bottom: -62px;
-            left: 25%;
+            bottom: 0px;
+            left: 0%;
         }
     }
 }
