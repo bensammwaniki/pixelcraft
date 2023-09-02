@@ -31,32 +31,7 @@ import { MeetingComponent } from './meeting/meeting.component';
     BrowserModule,
     AppRoutingModule,
     SlickCarouselModule,
-    RouterModule.forRoot([
-      { path: '', 
-        redirectTo: 'home', 
-        pathMatch: 'full'
-      },
-      {
-        path:'home',
-        component: HomeComponent
-      },
-      {
-        path:'contact',
-        component: ContactComponent
-      },
-      {
-        path:'service',
-        component: ServiceComponent
-      },
-      {
-        path:'about',
-        component: AboutUsComponent
-      },
-      {
-        path:'meeting',
-        component: MeetingComponent
-      },
-    ]),
+    RouterModule.forRoot([]),
   ],
   providers: [],
   bootstrap: [AppComponent]
